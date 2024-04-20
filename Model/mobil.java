@@ -11,6 +11,27 @@ public class mobil {
         this.tahunKeluaran = tahunKeluaran;
         this.penyewa = penyewa;
     }
+
+    public String getNoPlat() {
+        return noPlat;
+    }
+
+    public String getMerkMobil() {
+        return merkMobil;
+    }
+
+    public String getWarnaMobil() {
+        return warnaMobil;
+    }
+
+    public String getPenyewa() {
+        return penyewa;
+    }
+
+    public int getTahunKeluaran() {
+        return tahunKeluaran;
+    }
+
     public void setMerkMobil(String merkMobil) {
         this.merkMobil = merkMobil;
     }

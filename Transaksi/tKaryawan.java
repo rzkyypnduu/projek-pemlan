@@ -97,10 +97,10 @@ public class tKaryawan {
                 karyawan.setEmail(input.nextLine());
                 System.out.print("No. HP: ");
                 karyawan.setPhone(input.nextLine());
-                System.out.print("Jenis Kelamin: ");
-                karyawan.setGender(input.nextLine());
-                System.out.print("Kategori: ");
-                karyawan.setCategory(input.nextLine());
+                String gender = getGender(input);
+                karyawan.setGender(gender);
+                String category = getCategory(input);
+                karyawan.setCategory(category);
                 System.out.println("Data karyawan berhasil diperbarui.");
                 return;
             }
