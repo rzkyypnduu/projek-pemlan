@@ -9,15 +9,26 @@ public class tKaryawan {
     private static ArrayList<karyawan> listKaryawan = new ArrayList<>();
 
     private static String getGender(Scanner input) {
-        while (true) {
+        boolean cekGender = false;
+        String gender = "";
+        while (!cekGender) {
             System.out.print("Jenis Kelamin ('L' untuk Laki-laki, 'P' untuk Perempuan): ");
-            String gender = input.nextLine();
-            if (gender.equalsIgnoreCase("L") || gender.equalsIgnoreCase("P")) {
-                return gender;
+            String inputGender = input.nextLine().toLowerCase();
+            if (inputGender.equals("l") || inputGender.equals("p")) {
+                cekGender = true;
+                switch (inputGender) {
+                    case "l":
+                        gender = "Laki - Laki";
+                        break;
+                    case "p":
+                        gender = "Perempuan";
+                        break;
+                }
             } else {
                 System.out.println("Input tidak valid. Masukkan 'L' untuk Laki-laki atau 'P' untuk Perempuan.");
             }
         }
+        return gender;
     }
 
     private static String getCategory(Scanner input) {

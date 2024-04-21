@@ -4,7 +4,7 @@ public class karyawan{
     private String name, address,id,email, gender, category, phone;
 
 
-public karyawan(String name, String address,String id, String email, String phone, String gender, String category) {
+ public karyawan(String name, String address,String id, String email, String phone, String gender, String category) {
     this.name = name;
     this.address = address;
     this.gender = gender;
